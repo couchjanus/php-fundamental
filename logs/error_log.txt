@@ -1,0 +1,6 @@
+[12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
