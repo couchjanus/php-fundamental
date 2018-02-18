@@ -1,48 +1,83 @@
 <?php
 
-/**
- * @return string текущий адрес запроса
- */
-
-$result = null;
-
 function getURI(){
     if (isset($_SERVER['REQUEST_URI']) and !empty($_SERVER['REQUEST_URI']))
         return trim($_SERVER['REQUEST_URI'], '/');
 }
 
-//получаем строку запроса
 $uri = getURI();
 
-$routes = require_once(CONFIG.'routes.php');
+$filename = CONFIG.'routes'.EXT;
 
-// Проверить наличие такого запроса в routes.php
+if (file_exists($filename)) {
+    $routes = include($filename);
+} else {
+    echo "Файл $filename не существует";
+}
+
 foreach ($routes as $uriPattern => $path) {
 
  //Сравниваем uriPattern и $uri
- if(preg_match("~$uriPattern~", $uri)){
+ if($uriPattern == $uri){
 
-   // Получаем внутренний путь из внешнего согласно правилу
-   $internalRoute = preg_replace("~$uriPattern~", $path, $uri);
-
-   // Определить контроллер, action, параметры
-   $segments = explode('/', $internalRoute);
-
-   $controllerName = array_shift($segments);
-        
-   $actionName = array_shift($segments);
-
-   $parameters = $segments;
+   // Определить контроллер
+   $controller = $path;
 
    //Подключаем файл контроллера
-   $controllerFile = CONTROLLERS . $controllerName . EXT;
+   $controllerFile = CONTROLLERS . $controller . EXT;
 
    if(file_exists($controllerFile)){
      include_once($controllerFile);
+
      $result = true;
+
+     $controller = new $controller;
+
+     // if (! method_exists($controller, $action)) {
+     //  throw new Exception(
+     //  "{$controller} does not respond to the {$action} action."
+     //  );
+     //  }
+     //  else{
+     //   $controller->$action();  
+     //  }
+     break;
      }
 
-   if($result !== null)
-     break;
-    }
+    // try {
+     
+    //   include_once($controllerFile);
+
+    //   $controller = new $controller;
+
+    //   try {
+    //       // код который может выбросить исключение
+    //       $controller->$action();  
+    //   } catch (Exception $e) {
+    //       // код который может обработать исключение
+    //       // если конечно оно появится
+    //     if (! method_exists($controller, $action)) {
+    //       throw new Exception(
+    //       "{$controller} does not respond to the {$action} action."
+    //       );
+    //     }
+    //   }
+      
+    //   $result = true;
+    //   break; 
+    // } 
+    // catch (Exception $e) {
+    //     // код который может обработать исключение
+    //     // если конечно оно появится
+    //     if (! file_exists($controllerFile)) {
+    //       throw new Exception("{$controllerFile} does not respond.");
+    //   }
+    // } 
+
+   //  
+  }
+}
+   
+if($result === null){
+     require_once VIEWS.'404'.EXT;
 }
