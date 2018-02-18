@@ -15,7 +15,17 @@ ini_set('error_log', dirname(__FILE__) . '/../logs/error_log.txt');
 
 error_reporting(E_ALL);
 
+function render($path, $data = []) 
+{
+    extract($data);
+    
+    return require VIEWS."/{$path}.php";
+}
+
 require_once realpath(__DIR__).'/../config/app.php';
+
+
+require_once CORE.'Router.php';
 
 function makeConnection(){
         try {
