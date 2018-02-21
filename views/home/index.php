@@ -21,7 +21,7 @@ require_once VIEWS.'shared/navigation.php';
               <?php foreach($posts as $post): ?>
                     
                <h2 class="sub-heading-a u-align-center"><?php echo $post['title']?></h3>
-               <p class="body-a u-align-center"><?php echo $post['formated_date'];?></p>
+               <p class="body-a u-align-center"><?php echo $post['created_at'];?></p>
                <p class="body-a u-align-center"><?php echo substr($post['content'], 0, 100);?>... <a href="/blog/<?php echo $post['id']; ?>">Read More</a></p>
                                    
               <?php endforeach; ?>

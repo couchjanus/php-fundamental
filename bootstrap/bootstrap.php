@@ -17,22 +17,7 @@ error_reporting(E_ALL);
 
 require_once realpath(__DIR__).'/../config/app.php';
 
-function makeConnection(){
-        try {
-            return new PDO(
-                'mysql:host=localhost;dbname='.DATABASE,
-                DBUSER,
-                DBPASSWORD               
-            );
-        } catch (PDOException $e) {
-            die($e->getMessage());
-        }
-}
-
-function render($path, $data = []) 
-{
-    extract($data);
-    return require VIEWS."{$path}.php";
-}
-
+require_once CORE.'Connection.php';
+require_once CORE.'View.php';
+require_once CORE.'Controller.php';
 require_once CORE.'Router.php';

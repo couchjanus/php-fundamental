@@ -4,3 +4,24 @@
 [12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
 [12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
 [12-Feb-2018 10:31:52 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:03:31 Europe/Kiev] PHP Notice:  Undefined variable: posts in /home/janus/www/php-fundamental/views/home/index.php on line 21
+[21-Feb-2018 14:03:31 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-fundamental/views/home/index.php on line 21
+[21-Feb-2018 14:07:42 Europe/Kiev] PHP Notice:  Undefined variable: posts in /home/janus/www/php-fundamental/views/home/index.php on line 21
+[21-Feb-2018 14:07:42 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-fundamental/views/home/index.php on line 21
+[21-Feb-2018 14:10:46 Europe/Kiev] PHP Notice:  Undefined variable: posts in /home/janus/www/php-fundamental/views/home/index.php on line 21
+[21-Feb-2018 14:10:46 Europe/Kiev] PHP Warning:  Invalid argument supplied for foreach() in /home/janus/www/php-fundamental/views/home/index.php on line 21
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:14:49 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:13 Europe/Kiev] PHP Notice:  Undefined variable: con in /home/janus/www/php-fundamental/controllers/HomeController.php on line 11
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
