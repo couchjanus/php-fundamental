@@ -13,7 +13,7 @@ include_once VIEWS.'shared/admin/header.php';
         <div class="content-box-large">
                 <div class="panel-heading">
                     <div class="panel-title"><h3><?= $title;?></h3></div>
-                    <a href="/admin/product/add"><button class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add New</button></a>
+                    <a href="/admin/products/create"><button class="btn btn-primary pull-right"><i class="glyphicon glyphicon-plus-sign"></i> Add New</button></a>
                 </div>
                 
                 <div class="panel-body">
@@ -37,8 +37,7 @@ include_once VIEWS.'shared/admin/header.php';
                               <td><?php echo $product['price']?></td>
                               <td>
                               <button class="btn btn-default"><i class="glyphicon glyphicon-eye-open"></i> View</button>
-                              <button class="btn btn-info"><i class="glyphicon glyphicon-refresh"></i> Update</button>
-                              <button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</button>
+                              <a href="/admin/products/edit/<?=$product['id']?>"><button class="btn btn-primary"><i class="glyphicon glyphicon-pencil"></i> Edit</button></a>
                               <button class="btn btn-danger"><i class="glyphicon glyphicon-remove"></i> Delete</button></td>
                             </tr>
                             <?php endforeach;?>

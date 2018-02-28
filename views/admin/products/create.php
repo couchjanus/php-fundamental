@@ -18,7 +18,7 @@ include_once VIEWS.'shared/admin/header.php';
                     <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
                 </div>
           </div>
-          <form class="form-horizontal" role="form" id="idForm">
+          <form class="form-horizontal" role="form" method="post">
             
             <div class="panel-body">
                 <input type="hidden" name="id" id="id">
@@ -35,10 +35,18 @@ include_once VIEWS.'shared/admin/header.php';
                         </div>
                 </div>
                 <div class="form-group">
-                        <label for="category" class="col-sm-2 control-label">Product Category</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="category" name="category" placeholder="Product category">
-                        </div>
+                  <label for="category" class="col-sm-2 control-label">Product Category</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" id="category" name="category">
+                        <?php if (is_array($categories)): ?>
+                            <?php foreach ($categories as $category): ?>
+                                <option value="<?php echo $category['id']; ?>">
+                                    <?php echo $category['name']; ?>
+                                </option>
+                            <?php endforeach; ?>
+                        <?php endif; ?>
+                    </select>
+                  </div>
                 </div>
                 <div class="form-group">
                         <label for="brand" class="col-sm-2 control-label">Product Brand</label>

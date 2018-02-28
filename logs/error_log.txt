@@ -25,3 +25,43 @@
 [21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
 [21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
 [21-Feb-2018 14:15:25 Europe/Kiev] PHP Notice:  Undefined index: formated_date in /home/janus/www/php-fundamental/views/home/index.php on line 24
+[28-Feb-2018 10:49:08 Europe/Kiev] PHP Warning:  Use of undefined constant MODELS - assumed 'MODELS' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/bootstrap/bootstrap.php on line 22
+[28-Feb-2018 10:49:08 Europe/Kiev] PHP Warning:  require_once(MODELSCategory.php): failed to open stream: No such file or directory in /home/janus/www/php-fundamental/bootstrap/bootstrap.php on line 22
+[28-Feb-2018 10:49:08 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'MODELSCategory.php' (include_path='.:/usr/share/php') in /home/janus/www/php-fundamental/bootstrap/bootstrap.php on line 22
+[28-Feb-2018 10:50:39 Europe/Kiev] PHP Warning:  Use of undefined constant MODELS - assumed 'MODELS' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/bootstrap/bootstrap.php on line 22
+[28-Feb-2018 10:50:39 Europe/Kiev] PHP Warning:  require_once(MODELSCategory.php): failed to open stream: No such file or directory in /home/janus/www/php-fundamental/bootstrap/bootstrap.php on line 22
+[28-Feb-2018 10:50:39 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required 'MODELSCategory.php' (include_path='.:/usr/share/php') in /home/janus/www/php-fundamental/bootstrap/bootstrap.php on line 22
+[28-Feb-2018 10:58:13 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('admin/product/a...', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[28-Feb-2018 10:58:22 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('admin/product/a...', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[28-Feb-2018 10:58:44 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('admin/product/c...', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[28-Feb-2018 11:03:21 Europe/Kiev] PHP Warning:  require(/home/janus/www/php-fundamental/views//admin/products/edit.php): failed to open stream: No such file or directory in /home/janus/www/php-fundamental/core/View.php on line 7
+[28-Feb-2018 11:03:21 Europe/Kiev] PHP Fatal error:  require(): Failed opening required '/home/janus/www/php-fundamental/views//admin/products/edit.php' (include_path='.:/usr/share/php') in /home/janus/www/php-fundamental/core/View.php on line 7
+[28-Feb-2018 11:09:31 Europe/Kiev] PHP Warning:  require_once(/home/janus/www/php-fundamental/views/shared/admin/_metas.php): failed to open stream: No such file or directory in /home/janus/www/php-fundamental/views/admin/products/edit.php on line 94
+[28-Feb-2018 11:09:31 Europe/Kiev] PHP Fatal error:  require_once(): Failed opening required '/home/janus/www/php-fundamental/views/shared/admin/_metas.php' (include_path='.:/usr/share/php') in /home/janus/www/php-fundamental/views/admin/products/edit.php on line 94
+[28-Feb-2018 11:12:37 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('admin/products/...', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[28-Feb-2018 11:13:07 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('admin/products/...', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57

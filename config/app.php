@@ -7,6 +7,8 @@
     define('CORE', ROOT.'/core/');
     define('DB', ROOT.'/db/');
     define('EXT', '.php');
+    
+    define('MODELS', ROOT.'/models/');
     define('APPNAME', 'Great Shopaholic');
     define('SLOGAN', 'Lets Build Cool Site');
     
