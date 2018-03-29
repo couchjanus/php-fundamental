@@ -9,6 +9,7 @@ $router->get('guestbook', 'GuestbookController@index');
 
 $router->get('blog', 'BlogController@index');
 $router->get('blog/{id}', 'BlogController@view');
+$router->post('blog/search', 'BlogController@search');
 
 $router->get('admin', 'Admin\DashboardController@index');
 
@@ -29,4 +30,11 @@ $router->post('admin/categories/edit/{id}', 'Admin\shop\CategoriesController@edi
 $router->get('admin/categories/delete/{id}', 'Admin\shop\CategoriesController@delete');
 $router->post('admin/categories/delete/{id}', 'AdminCategoriesController@delete');
 
+$router->get('admin/posts', 'Admin\blog\PostsController@index');
+$router->get('admin/posts/create', 'Admin\blog\PostsController@create');
+$router->get('admin/posts/edit/{id}', 'Admin\blog\PostsController@edit');
+$router->get('admin/posts/delete/{id}', 'Admin\blog\PostsController@delete');
+$router->post('admin/posts/create', 'Admin\blog\PostsController@add');
+$router->post('admin/posts/edit/{id}', 'Admin\blog\PostsController@edit');
+$router->post('admin/posts/delete/{id}', 'Admin\blog\PostsController@delete');
 

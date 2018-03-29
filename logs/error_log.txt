@@ -65,3 +65,106 @@ Stack trace:
 #1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
 #2 {main}
   thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[29-Mar-2018 09:47:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-fundamental/controllers/BlogController.php:8
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): BlogController->index(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction(Object(BlogController), 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 8
+[29-Mar-2018 09:50:46 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-fundamental/controllers/BlogController.php:8
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): BlogController->index(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction(Object(BlogController), 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 8
+[29-Mar-2018 09:51:55 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-fundamental/controllers/BlogController.php:8
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): BlogController->index(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction(Object(BlogController), 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 8
+[29-Mar-2018 09:52:00 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function render() in /home/janus/www/php-fundamental/controllers/BlogController.php:8
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): BlogController->index(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction(Object(BlogController), 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 8
+[29-Mar-2018 09:52:32 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Breadcrumb' not found in /home/janus/www/php-fundamental/core/Controller.php:13
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(83): Controller->__construct()
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction('BlogController', 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/core/Controller.php on line 13
+[29-Mar-2018 09:53:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Breadcrumb' not found in /home/janus/www/php-fundamental/core/Controller.php:13
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(83): Controller->__construct()
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction('BlogController', 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/core/Controller.php on line 13
+[29-Mar-2018 09:54:07 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Post' not found in /home/janus/www/php-fundamental/controllers/BlogController.php:7
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): BlogController->index(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction(Object(BlogController), 'index', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(33): Router->directPath('blog', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 7
+[29-Mar-2018 09:55:09 Europe/Kiev] PHP Notice:  Undefined variable: resCount in /home/janus/www/php-fundamental/views/blog/index.php on line 20
+[29-Mar-2018 09:56:21 Europe/Kiev] PHP Notice:  Undefined variable: breadcrumb in /home/janus/www/php-fundamental/views/blog/index.php on line 10
+[29-Mar-2018 10:02:18 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(34): Router->directPath('admin/posts', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[29-Mar-2018 10:03:44 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Meta' not found in /home/janus/www/php-fundamental/controllers/Admin/blog/PostsController.php:74
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): PostsController->edit(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(53): Router->callAction(Object(PostsController), 'edit', '/Admin/blog/', Array)
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(34): Router->directPath('admin/posts/edi...', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/Admin/blog/PostsController.php on line 74
+[29-Mar-2018 10:06:09 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Meta' not found in /home/janus/www/php-fundamental/controllers/Admin/blog/PostsController.php:74
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): PostsController->edit(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(53): Router->callAction(Object(PostsController), 'edit', '/Admin/blog/', Array)
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(34): Router->directPath('admin/posts/edi...', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/Admin/blog/PostsController.php on line 74
+[29-Mar-2018 10:14:36 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:14:38 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:14:44 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:14:46 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:15:05 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:15:08 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:15:10 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 30
+[29-Mar-2018 10:16:26 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 28
+[29-Mar-2018 10:16:29 Europe/Kiev] PHP Warning:  Use of undefined constant LANGUAGE - assumed 'LANGUAGE' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/views/shared/admin/header.php on line 28
+[29-Mar-2018 10:24:33 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:57
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(34): Router->directPath('blog/search', 'POST')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 57
+[29-Mar-2018 10:25:39 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined method Post::searchPost() in /home/janus/www/php-fundamental/controllers/BlogController.php:47
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(90): BlogController->search(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(42): Router->callAction(Object(BlogController), 'search', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(34): Router->directPath('blog/search', 'POST')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 47
