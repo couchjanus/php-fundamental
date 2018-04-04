@@ -95,12 +95,82 @@ class GalleryController extends Controller
 
     }
 
-    public function edit($vars)
+   public function edit($vars)
     {
-    
         extract($vars);
-        $data['title'] = 'Admin Edit Post ';
-        $this->_view->render('admin/posts/edit', $data);
+		
+		$item = Gallery::getById($id);
+        $picrure = Picture::getPictureById($id, $this->_resource);
+		
+		if (isset($_POST) and !empty($_POST)) {
+            $options['title'] = trim(strip_tags($_POST['title']));
+            $options['description'] = trim($_POST['description']);
+
+            if (isset($_FILES['image'])) {
+                //Каталог загрузки картинок
+                $uploadDir = 'media';
+				
+				$expensions= array("jpeg","jpg","png",'gif');
+                //Определяем типы файлов для загрузки
+                $fileTypes = array(
+                    'jpg' => 'image/jpeg',
+                    'png' => 'image/png',
+                    'gif' => 'image/gif'
+                );
+				//Вывод ошибок
+                $errors = array();
+				
+			if (!empty($_FILES['image']['name'])) {
+                
+                $file_name = $_FILES['image']['name'];
+                $file_size = $_FILES['image']['size'];
+                $file_tmp = $_FILES['image']['tmp_name'];
+                $file_type = $_FILES['image']['type'];
+
+                $type = pathinfo($_FILES['image']['name']);
+                $file_ext = strtolower($type['extension']);
+
+                //Проверяем пустые данные или нет
+                if ($_FILES['image']['error'] > 0) {
+                    // Проверяем на ошибки
+                    $errors[] = $_FILES['image']['error'];
+                } elseif ($file_size > 2097152) {
+                    // если размер файла превышает 2 Мб
+                    $errors[] = 'File size must be excately 2 MB';
+                } elseif (in_array($file_ext, $expensions)=== false) {
+                    $errors[] = "extension not allowed, please choose a JPEG or PNG file.";
+                } elseif (!in_array($file_type, $fileTypes)) {
+                    // Проверяем тип файла
+                    $errors[] = 'Запрещённый тип файла';
+                }
+               
+                if (empty($errors)) {
+						$type = pathinfo($_FILES['image']['name']);
+						$name = uniqid('files_') .'.'. $type['extension'];
+						
+						Picture::destroy($picture['id']);
+						
+						unlink('media/'.$picture['filename']);            
+						move_uploaded_file($file_tmp, "media/".$name);
+						  
+						$opts['filename'] = $name;
+						$opts['resource_id'] = $id;
+						$opts['resource'] = $this->_resource;
+						Picture::store($opts);
+			
+                } else {
+                    print_r($errors);
+					}
+			}
+		}
+            Gallery::update($id, $options);
+            $this->redirect('/admin/gallery');
+        }
+		
+		$data['title'] = 'Admin Edit Gallery ';
+        $data['item'] = $item;
+		$data['picrure'] = $picrure;
+		$this->_view->render('admin/posts/edit', $data);
 
     }
 
