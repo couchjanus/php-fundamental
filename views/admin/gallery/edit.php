@@ -18,7 +18,7 @@ require_once VIEWS.'shared/admin/header.php';
                     <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
                 </div>
           </div>
-          <form class="form-horizontal" role="form" method="POST"  id="idForm">
+          <form class="form-horizontal" role="form" method="POST"   enctype="multipart/form-data">
 
             <div class="panel-body">
                 <div class="form-group">
@@ -35,20 +35,15 @@ require_once VIEWS.'shared/admin/header.php';
                 </div>
 
 
-                <div class="form-group">
-                    <label for="status" class="col-sm-2 control-label">Status</label>
+                <div class="form-group" id="drop-area">
+                    <label for="image" class="col-sm-2 control-label">Picture</label>
                     <div class="col-sm-10">
-                      <select name="status" class="form-control">
-                        <option value="1" <?php if($post['status'] == 1) echo 'selected'?>>Отображать</option>
-                        <option value="0" <?php if($post['status'] == 0) echo 'selected'?>>Скрывать</option>
-                      </select>
+                        <input type="file" class="form-control" id="fileElem" multiple accept="image/*" name="image"> 
+                        <p>Drop Picture Here</p>
                     </div>
                 </div>
-                
                 <hr>
-                <?php
-                    require_once VIEWS.'shared/admin/_metas.php';
-                ?>
+                
                 <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                         <button id="save" type="submit" class="save btn btn-primary">Add Post</button>
