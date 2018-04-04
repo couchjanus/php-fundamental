@@ -174,17 +174,19 @@ class GalleryController extends Controller
 
     }
 
-    public function delete($vars) 
+   public function delete($vars) 
     {
         extract($vars);
-        
-        $picture = Picture::getPictureById($id);
-
+       
+		$picrure = Picture::getPictureById($id, $this->_resource);
+		
         if (isset($_POST['submit'])) {
             
             unlink('media/'.$picture['filename']);            
 
-            Picture::destroy($id);
+            Picture::destroy($picture['id']);
+			
+			Gallery::destroy($id);
             $this->redirect('/admin/gallery');
             
         } elseif (isset($_POST['reset'])) {
