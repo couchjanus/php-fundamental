@@ -57,12 +57,13 @@ class Picture
 
     }
 
-    public static function getPictureById($id) 
+   public static function getPictureById($id, $resource) 
     {
         $con = Connection::make();
-        $sql = "SELECT * FROM pictures WHERE id = :id";
+        $sql = "SELECT * FROM pictures WHERE id_resource = :id AND resource = :resource";
         $res = $con->prepare($sql);
         $res->bindParam(':id', $id, PDO::PARAM_INT);
+		$res->bindParam(':resource', $resource, PDO::PARAM_STR);
         $res->execute();
         $picture = $res->fetch(PDO::FETCH_ASSOC);
         return $picture;
