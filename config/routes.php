@@ -43,3 +43,6 @@ $router->get('admin/gallery/create', 'Admin\gallery\GalleryController@create');
 $router->post('admin/gallery/create', 'Admin\gallery\GalleryController@create');
 $router->get('admin/gallery/delete/{id}', 'Admin\gallery\GalleryController@delete');
 $router->post('admin/gallery/delete/{id}', 'Admin\gallery\GalleryController@delete');
+
+$router->get('admin/gallery/edit/{id}', 'Admin\gallery\GalleryController@edit');
+$router->post('admin/gallery/edit/{id}', 'Admin\gallery\GalleryController@edit');
