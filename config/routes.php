@@ -38,3 +38,8 @@ $router->post('admin/posts/create', 'Admin\blog\PostsController@add');
 $router->post('admin/posts/edit/{id}', 'Admin\blog\PostsController@edit');
 $router->post('admin/posts/delete/{id}', 'Admin\blog\PostsController@delete');
 
+$router->get('admin/gallery', 'Admin\gallery\GalleryController@index');
+$router->get('admin/gallery/create', 'Admin\gallery\GalleryController@create');
+$router->post('admin/gallery/create', 'Admin\gallery\GalleryController@create');
+$router->get('admin/gallery/delete/{id}', 'Admin\gallery\GalleryController@delete');
+$router->post('admin/gallery/delete/{id}', 'Admin\gallery\GalleryController@delete');
