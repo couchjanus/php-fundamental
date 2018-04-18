@@ -168,3 +168,27 @@ Stack trace:
 #3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
 #4 {main}
   thrown in /home/janus/www/php-fundamental/controllers/BlogController.php on line 47
+[18-Apr-2018 10:12:41 Europe/Kiev] PHP Fatal error:  Uncaught Error: Call to undefined function required() in /home/janus/www/php-fundamental/core/Router.php:78
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(39): Router->callAction('DashboardContro...', 'index', '/Admin/')
+#1 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(36): Router->directPath('admin', 'GET')
+#2 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#3 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 78
+[18-Apr-2018 10:27:31 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'User' not found in /home/janus/www/php-fundamental/controllers/Admin/users/UsersController.php:8
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(87): UsersController->index(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(39): Router->callAction(Object(UsersController), 'index', '/Admin/users/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(36): Router->directPath('admin/users', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/Admin/users/UsersController.php on line 8
+[18-Apr-2018 10:28:37 Europe/Kiev] PHP Fatal error:  Uncaught Error: Class 'Session' not found in /home/janus/www/php-fundamental/controllers/UsersController.php:67
+Stack trace:
+#0 /home/janus/www/php-fundamental/core/Router.php(87): UsersController->login(Array)
+#1 /home/janus/www/php-fundamental/core/Router.php(39): Router->callAction(Object(UsersController), 'login', '/')
+#2 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(37): Router->directPath('login', 'GET')
+#3 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#4 {main}
+  thrown in /home/janus/www/php-fundamental/controllers/UsersController.php on line 67
+[18-Apr-2018 10:29:59 Europe/Kiev] PHP Warning:  Use of undefined constant SESSION_PREFIX - assumed 'SESSION_PREFIX' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/core/Session.php on line 30

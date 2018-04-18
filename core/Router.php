@@ -75,7 +75,7 @@ class Router
     protected function callAction($controller, $action, $controllerFile, $vars = []) // add $vars = [] in case $vars is empty
     {
         
-        required(CONTROLLERS.$controllerFile.'/'.$controller.EXT);
+        include CONTROLLERS.$controllerFile.'/'.$controller.EXT;
         
         $controller = new $controller;
         

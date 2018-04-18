@@ -43,3 +43,18 @@ $router->get('admin/gallery/create', 'Admin\gallery\GalleryController@create');
 $router->post('admin/gallery/create', 'Admin\gallery\GalleryController@create');
 $router->get('admin/gallery/delete/{id}', 'Admin\gallery\GalleryController@delete');
 $router->post('admin/gallery/delete/{id}', 'Admin\gallery\GalleryController@delete');
+
+
+$router->get('admin/users', 'Admin\users\UsersController@index');
+$router->get('admin/users/create', 'Admin\users\UsersController@create');
+$router->get('admin/users/edit/{id}', 'Admin\users\UsersController@edit');
+$router->get('admin/users/delete/{id}', 'Admin\users\UsersController@delete');
+$router->post('admin/users/create', 'Admin\users\UsersController@create');
+$router->post('admin/users/edit/{id}', 'Admin\users\UsersController@edit');
+$router->post('admin/users/delete/{id}', 'Admin\users\UsersController@delete');
+
+$router->get('login', 'UsersController@login');
+$router->post('login', 'UsersController@login');
+
+$router->get('register', 'UsersController@signup');
+$router->post('register', 'UsersController@signup');
