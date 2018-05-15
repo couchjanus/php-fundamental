@@ -2,46 +2,41 @@
 require_once VIEWS.'shared/head.php';
 require_once VIEWS.'shared/navigation.php';
 ?>
- <!-- Start -->
-<section class="product">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="feature_header text-center">
-          <h2 class="feature_title"><?= $title;?></h2>
 
-          <div class="divider"></div>
-        </div>
-      </div>  <!-- Col-md-12 End -->
-      
-      <div class="items">
+<div class="cf"></div>
+
+<div class="breadcrumb"><?= $breadcrumb;?></div>
+
+<div class="content-wrap">
+  <?php
+  printf("<h1 style='color: #%x%x%x'>%s</h1>", 165, 27, 45, $title);
+  ?>
+
+   <div class="items">
     
-        <?php if ($success == true) :?>
-          <h3><?= $num_rows;?></h3>
-          <ul>
-            <?php foreach($posts as $singleItem): ?>
-              <li>
-                <h3><?php echo $singleItem['title']?></h3>
-                  <p><?php echo $singleItem['formated_date'];?></p>
-                  <a href="/blog/<?php echo $singleItem['id']; ?>">Read More</a>
-              </li>
-            <?php endforeach; ?>
-          </ul> 
+    <?php if ($data['success'] == true):?>
+      <h3><?= $data['num_rows']?></h3>
+      <ul>
+        <?php foreach($posts as $singleItem): ?>
+          <li>
+            <h3><?php echo $singleItem['title']?></h3>
+              <p><?php echo $singleItem['created_at'];?></p>
+              <a href="/blog/<?php echo $singleItem['slug']; ?>">Read More</a>
+          </li>
+        <?php endforeach; ?>
+      </ul> 
+    <?php endif;?>
+  </div>
+  
 
-        <?php else : ?>
-          <ul>
-            <?php foreach($errors as $error): ?>
-              <li>
-                <?php echo $error;?>
-              </li>
-            <?php endforeach; ?>
-          </ul> 
-        <?php endif;?>
-      </div>
-    </div>
-  </div> <!-- Conatiner product end -->
-</section>  <!-- Section product End -->
+</div>
+<!-- Page End -->
+<div class="cf"></div>
+<?php 
+require_once VIEWS.'shared/aside.php';
+require_once VIEWS.'shared/footer.php';
+require_once VIEWS.'shared/scripts.php';
+?>
 
-<!-- Our product End -->
-<div class="clearfix"></div>
-<?php require_once VIEWS.'shared/footer.php';
+</body>
+</html>

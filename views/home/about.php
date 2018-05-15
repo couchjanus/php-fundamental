@@ -3,21 +3,23 @@ require_once VIEWS.'shared/head.php';
 require_once VIEWS.'shared/navigation.php';
 ?>
 <!-- product Start -->
-<section class="product">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="feature_header text-center">
-                    <h3 class="feature_title"><?=$title;?></h3>
-                    <h4 class="feature_sub">Hello There</h4>
-                    <div class="divider"></div>
-                </div>
-            </div>  <!-- Col-md-12 End -->
-        </div>
-    </div> <!-- Conatiner product end -->
-</section>  <!-- Section product End -->
+
+<h1><?php echo $title; ?></h1>        
+
+<h4 class="feature_sub">Hello There</h4>
+<h4 class="feature_sub">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </h4>
+
+
 
 <!-- Our product End -->
 <div class="clearfix"></div>
 
-<?php require_once VIEWS.'shared/footer.php';
+<?php 
+require_once VIEWS.'shared/aside.php';
+require_once VIEWS.'shared/footer.php';
+require_once VIEWS.'shared/scripts.php';
+?>
+             
+
+</body>
+</html>

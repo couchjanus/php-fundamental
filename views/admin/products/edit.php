@@ -3,15 +3,15 @@
 ?>
 <div class="page-content">
    <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
         <?php
           require_once VIEWS.'shared/admin/_aside.php';
         ?>
         </div>
-      <div class="col-md-10">
+      <div class="col-md-9">
         <div class="content-box-large">
           <div class="panel-heading">
-                <div class="panel-title"><?= $title;?> <?= $product['name']?></div>
+                <div class="panel-title"> <?= $title;?> <?= $product['name']?></div>
 
                 <div class="panel-options">
                     <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
@@ -89,6 +89,7 @@
                 
             </div>
             
+            <hr>
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                   <button id="save" type="submit" class="save btn btn-primary">Update Product</button>

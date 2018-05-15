@@ -12,8 +12,7 @@ class Post {
     public static function index() 
     {
         $con = Connection::make();
-        $con->exec("set names utf8");
-        $sql = "SELECT id, title, content, DATE_FORMAT(`created_at`, '%d.%m.%Y %H:%i:%s') AS formated_date, status FROM posts ORDER BY id ASC";
+        $sql = "SELECT * FROM posts ORDER BY id ASC";
         $res = $con->query($sql);
         $posts = $res->fetchAll(PDO::FETCH_ASSOC);
         return $posts;

@@ -1,0 +1,495 @@
+.entry h2,
+.entry h2 a {
+	font: 31px/36px 'opensans-semibold', sans-serif;
+	color: #444;
+	margin-bottom: 0;
+	letter-spacing: -.5px;
+}
+/* e. Entry
+/* ------------------------------------------------------------------ */
+.entry {
+	padding-bottom: 12px;
+	margin-bottom: 24px;
+}
+.entry header { height: auto; }
+
+.entry .entry-meta ul {
+	margin: 6px 0 18px;
+	color: #B7B9BD;
+	line-height: 24px;
+}
+.entry .entry-meta ul li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	font-family: 'merriweather-regular', sans-serif;	
+}
+.entry .entry-meta ul .meta-sep {}
+.entry .entry-meta ul li a { color: #B7B9BD; }
+
+.entry .entry-content-media {	margin: 24px 0 18px;	}
+
+.entry .tags {
+  margin-top: 18px;
+  font-family: 'opensans-regular', sans-serif;
+  color: #888;
+}
+.entry .tags a { font-family: 'opensans-bold', sans-serif; }
+
+.content-wrap {
+	background: #fff;
+	padding: 42px;
+}
+
+
+dropdown {
+    display: inline-block;
+    margin: 20px 50px;
+    position: absolute;
+    right:10px;
+    top:90px;
+    
+  }
+  
+  dropdown label, dropdown ul li {
+    display: block;
+    width: 200px;
+    background: #ECF0F1;
+    padding: 15px 20px;
+  }
+  
+  dropdown label:hover, dropdown ul li:hover {
+    background: #1ABC9C;
+    color: white;
+    cursor: pointer;
+  }
+  
+  dropdown label {
+    color: #1ABC9C;
+    border-left: 4px solid #1ABC9C;
+    border-radius: 0 5px 0 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  dropdown input {
+    display: none;
+  }
+  
+  dropdown input ~ ul {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    top: -20px;
+    z-index: 1;
+  }
+  
+  dropdown input:checked + label {
+    background: #1ABC9C;
+    color: white;
+  }
+  
+  dropdown input:checked ~ ul {
+    visibility: visible;
+    opacity: 1;
+    top: 0;
+  }
+  
+  dropdown ul li:nth-child(1) {
+    border-left: 4px solid #E74C3C;
+  }
+  dropdown ul li:nth-child(1) .fa {
+    color: #E74C3C;
+  }
+  dropdown ul li:nth-child(1):hover {
+    background: #E74C3C;
+    color: white;
+  }
+  dropdown ul li:nth-child(1):hover .fa {
+    color: white;
+  }
+  
+  dropdown ul li:nth-child(2) {
+    border-left: 4px solid #0072B5;
+  }
+  dropdown ul li:nth-child(2) .fa {
+    color: #0072B5;
+  }
+  dropdown ul li:nth-child(2):hover {
+    background: #0072B5;
+    color: white;
+  }
+  dropdown ul li:nth-child(2):hover .fa {
+    color: white;
+  }
+  
+  dropdown ul li:nth-child(3) {
+    border-left: 4px solid #2C3E50;
+  }
+  dropdown ul li:nth-child(3) .fa {
+    color: #2C3E50;
+  }
+  dropdown ul li:nth-child(3):hover {
+    background: #2C3E50;
+    color: white;
+  }
+  dropdown ul li:nth-child(3):hover .fa {
+    color: white;
+  }
+  
+  .animate {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -ms-transition: all .3s;
+    transition: all .3s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /* Chrome and Safari */
+    -moz-backface-visibility: hidden;
+    /* Firefox */
+    -ms-backface-visibility: hidden;
+    /* Internet Explorer */
+  }
+
+
+  /* Login */
+
+
+.form a {
+    text-decoration: none;
+    color: rgb(250, 245, 244);
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .form a:hover {
+    color: #EE3B24;
+  }
+  
+  .form {
+    background: rgba(5, 5, 5, 0.9);
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  }
+  
+  .form .tab-group {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  .form .tab-group:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .form .tab-group li a {
+    display: block;
+    text-decoration: none;
+    padding: 15px;
+    background: rgba(160, 179, 176, 0.25);
+    color: #a0b3b0;
+    font-size: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+  }
+  .form .tab-group li a:hover {
+    background: #EE3B24;
+    color: #ffffff;
+  }
+  .form .tab-group .active a {
+    background: #FF3B24;
+    color: #ffffff;
+  }
+  
+  .form .tab-content > div:last-child {
+    display: none;
+  }
+  
+  .form h1 {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 300;
+    margin: 0 0 40px;
+  }
+    
+  .form label .req {
+    margin-right: 1em;
+    color: #EE3B24;
+  }
+     
+  
+  
+  .form input, .form textarea {
+    font-size: 22px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 10px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+  }
+  
+  .form input:focus, .form textarea:focus {
+    outline: 0;
+    border-color: #EE3B24;
+  }
+  
+  
+  .form textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+  }
+  
+  .form .field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .form .top-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .form .top-row > div {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+  }
+  .form .top-row > div:last-child {
+    margin: 0;
+  }
+  
+  .form .button {
+    border: 0;
+    outline: none;
+    border-radius: 0;
+    padding: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background: #EE3B24;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+  
+  }
+  .form .button:hover, .form .button:focus {
+    background: #FF3B24;
+  }
+  
+  .button-block {
+    display: block;
+    position: relative;
+    z-index: 5;
+    width: 100%;
+  }
+  
+  .form .forgot {
+    margin-top: -20px;
+    text-align: right;
+  }
+  .form input, .form textarea {
+    margin: 0;
+    line-height: normal;
+    font-family: inherit;
+    font-size: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .grid-container {
+    display: grid;
+    margin-top: 7em;
+    grid-template-rows: 10em 1fr;
+    grid-template-columns: 3fr 9fr;
+    grid-gap: 1rem;
+  }
+  .row {
+    grid-column: span 2;
+    text-align: center;
+  }
+
+  .column{
+    padding: 2rem;
+  }
+
+  .breadcrumb {
+    /*centering*/
+    display: inline-block;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    border-radius: 5px;
+    /*Lets add the numbers for each link using CSS counters. flag is the name of the counter. to be defined using counter-reset in the parent element of the links*/
+    counter-reset: flag;
+    margin-top: 10rem; 
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 36px;
+    color: white;
+    /*need more margin on the left of links to accomodate the numbers*/
+    padding: 0 10px 0 60px;
+    background: #666;
+    background: linear-gradient(#666, #333);
+    position: relative;
+  }
+  
+  /*since the first link does not have a triangle before it we can reduce the left padding to make it look consistent with other links*/
+  .breadcrumb a:first-child {
+    padding-left: 46px;
+    border-radius: 5px 0 0 5px; /*to match with the parent's radius*/
+  }
+  .breadcrumb a:first-child:before {
+    left: 14px;
+  }
+  .breadcrumb a:last-child {
+    border-radius: 0 5px 5px 0; /*this was to prevent glitches on hover*/
+    padding-right: 20px;
+  }
+  
+  /*hover/active styles*/
+  .breadcrumb a.active, .breadcrumb a:hover{
+    background: #333;
+    background: linear-gradient(#333, #000);
+    color: #E74C3C;
+  }
+  .breadcrumb a.active:after, .breadcrumb a:hover:after {
+    background: #333;
+    background: linear-gradient(135deg, #333, #000);
+    color: #E74C3C;
+  }
+  
+  /*adding the arrows for the breadcrumbs using rotated pseudo elements*/
+  .breadcrumb a:after {
+    content: '';
+    position: absolute;
+    top: 0; 
+    right: -18px; /*half of square's length*/
+    /*same dimension as the line-height of .breadcrumb a */
+    width: 36px; 
+    height: 36px;
+    /*as you see the rotated square takes a larger height. which makes it tough to position it properly. So we are going to scale it down so that the diagonals become equal to the line-height of the link. We scale it to 70.7% because if square's: 
+    length = 1; diagonal = (1^2 + 1^2)^0.5 = 1.414 (pythagoras theorem)
+    if diagonal required = 1; length = 1/1.414 = 0.707*/
+    transform: scale(0.707) rotate(45deg);
+    /*we need to prevent the arrows from getting buried under the next link*/
+    z-index: 1;
+    /*background same as links but the gradient will be rotated to compensate with the transform applied*/
+    background: #666;
+    background: linear-gradient(135deg, #666, #333);
+    /*stylish arrow design using box shadow*/
+    box-shadow: 
+      2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+      3px -3px 0 2px rgba(255, 255, 255, 0.1);
+    /*
+      5px - for rounded arrows and 
+      50px - to prevent hover glitches on the border created using shadows*/
+    border-radius: 0 5px 0 50px;
+  }
+  /*we dont need an arrow after the last link*/
+  .breadcrumb a:last-child:after {
+    content: none;
+  }
+  /*we will use the :before element to show numbers*/
+  .breadcrumb a:before {
+    content: counter(flag);
+    counter-increment: flag;
+    /*some styles now*/
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    margin: 8px 0;
+    position: absolute;
+    top: 0;
+    left: 30px;
+    background: #444;
+    background: linear-gradient(#444, #222);
+    font-weight: bold;
+  }
+    
+
+  .pagination {
+    font-weight: bold;
+    font-size: 16px;
+    font-family: "helvetica neue", helvetica, arial, sans-serif;
+   
+  }
+  .pagination li {
+      display: inline-block;
+  }
+  .pagination a {
+    padding: 8px 16px;
+    border: 1px solid #262626;
+    border-radius: 3px;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2UzZTNlMyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2I4YjhiOCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e3e3e3), color-stop(100%, #b8b8b8));
+    background: -moz-linear-gradient(top, #e3e3e3, #b8b8b8);
+    background: -webkit-linear-gradient(top, #e3e3e3, #b8b8b8);
+    background: linear-gradient(to bottom, #e3e3e3, #b8b8b8);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6), inset 0 1px rgba(255, 255, 255, 0.4);
+    color: #333;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.72);
+  }
+  .pagination a:hover {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Q5MDA3MyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2EwMDA1NiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d90073), color-stop(100%, #a00056));
+    background: -moz-linear-gradient(top, #d90073, #a00056);
+    background: -webkit-linear-gradient(top, #d90073, #a00056);
+    background: linear-gradient(to bottom, #d90073, #a00056);
+    color: #260014;
+  }
+  .pagination li.active {
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYWRkOSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwNzA4YyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00add9), color-stop(100%, #00708c));
+    background: -moz-linear-gradient(top, #00add9, #00708c);
+    background: -webkit-linear-gradient(top, #00add9, #00708c);
+    background: linear-gradient(to bottom, #00add9, #00708c);
+    color: #001e26;
+  }
+  .pagination li.active:hover {
+    cursor: default;
+  }
+  .pagination .prev:before {
+    content: "« ";
+    font-weight: normal;
+  }
+  .pagination .next:after {
+    content: " »";
+    font-weight: normal;
+  }
+  .pagination .next:hover, .pagination .prev:hover {
+    border-color: #141414;
+    background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzI2MjYyNiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFhMWExYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #262626), color-stop(100%, #1a1a1a));
+    background: -moz-linear-gradient(top, #262626, #1a1a1a);
+    background: -webkit-linear-gradient(top, #262626, #1a1a1a);
+    background: linear-gradient(to bottom, #262626, #1a1a1a);
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6), inset 0 1px rgba(255, 255, 255, 0.1);
+    color: #ebebeb;
+    text-shadow: none;
+  }
+  

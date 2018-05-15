@@ -192,3 +192,83 @@ Stack trace:
 #4 {main}
   thrown in /home/janus/www/php-fundamental/controllers/UsersController.php on line 67
 [18-Apr-2018 10:29:59 Europe/Kiev] PHP Warning:  Use of undefined constant SESSION_PREFIX - assumed 'SESSION_PREFIX' (this will throw an Error in a future version of PHP) in /home/janus/www/php-fundamental/core/Session.php on line 30
+[15-May-2018 22:52:18 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('admin/orders', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:55:05 Europe/Kiev] PHP Notice:  Undefined variable: breadcrumb in /home/janus/www/php-fundamental/views/home/index.php on line 8
+[15-May-2018 22:55:06 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:56:35 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:57:42 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:58:12 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:58:17 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:58:59 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 22:59:59 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 23:00:03 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 23:02:57 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 23:07:30 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 23:07:35 Europe/Kiev] PHP Fatal error:  Uncaught Exception: No route defined for this URI. in /home/janus/www/php-fundamental/core/Router.php:54
+Stack trace:
+#0 /home/janus/www/php-fundamental/bootstrap/bootstrap.php(39): Router->directPath('api/shop', 'GET')
+#1 /home/janus/www/php-fundamental/public/index.php(2): require_once('/home/janus/www...')
+#2 {main}
+  thrown in /home/janus/www/php-fundamental/core/Router.php on line 54
+[15-May-2018 23:18:40 Europe/Kiev] PHP Notice:  Undefined variable: breadcrumb in /home/janus/www/php-fundamental/views/blog/index.php on line 8
+[15-May-2018 23:18:40 Europe/Kiev] PHP Notice:  Undefined variable: rowCount in /home/janus/www/php-fundamental/views/blog/index.php on line 29
+[15-May-2018 23:19:41 Europe/Kiev] PHP Notice:  Undefined variable: rowCount in /home/janus/www/php-fundamental/views/blog/index.php on line 27
+[15-May-2018 23:19:45 Europe/Kiev] PHP Notice:  Undefined variable: rowCount in /home/janus/www/php-fundamental/views/blog/index.php on line 27
+[15-May-2018 23:19:47 Europe/Kiev] PHP Notice:  Undefined variable: rowCount in /home/janus/www/php-fundamental/views/blog/index.php on line 27
+[15-May-2018 23:24:24 Europe/Kiev] PHP Notice:  Undefined variable: rowCount in /home/janus/www/php-fundamental/views/blog/index.php on line 27
+[15-May-2018 23:26:43 Europe/Kiev] PHP Fatal error:  Cannot redeclare BlogController::search() in /home/janus/www/php-fundamental/controllers/BlogController.php on line 89

@@ -1,32 +1,45 @@
 <?php
 require_once VIEWS.'shared/head.php';
 require_once VIEWS.'shared/navigation.php';
+
+?>
+<div class="cf"></div>
+
+<div class="content-wrap">
+  <?php
+  printf("<h1 style='color: #%x%x%x'>%s</h1>", 165, 27, 45, $title);
+  ?>
+
+    <article class="entry">
+    <header class="entry-header">
+      <h2 class="entry-title">
+        <?php echo $post["title"];?>
+      </h2> 				 
+      <div class="entry-meta">
+        <ul>
+          <li><?php echo $post["created_at"];?></li>
+          <span class="meta-sep">&bull;</span>								
+          <li><a href="#" title="" rel="category tag">Ghost</a></li>
+          <span class="meta-sep">&bull;</span>
+          <li>John Doe</li>
+        </ul>
+      </div> 
+    </header> 
+
+    <div class="entry-content">
+      <p><?php echo $post["content"];?></p>
+    </div> 
+
+    </article> <!-- end entry -->
+</div>
+<!-- Page End -->
+<div class="cf"></div>
+<?php 
+require_once VIEWS.'shared/aside.php';
+require_once VIEWS.'shared/footer.php';
+require_once VIEWS.'shared/scripts.php';
 ?>
 
-<section class="product">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-            
-                <div class="feature_header text-center">
-                    <h3 class="feature_title"><?=$title;?></h3>
-                    <h4 class="feature_sub"><?=$subtitle;?></h4>
-                    <div class="divider"></div>
+</body>
+</html>
 
-                </div>
-            </div>  <!-- Col-md-12 End -->
-            <div class="items">
-              <?php 
-                  echo "<h2>".$post["title"]."</h2>"; 
-                  echo "<div class='added_at'> Added At: ".$post["created_at"]."</div>"; 
-                  echo "<div class='content'>".$post["content"]."</div>"; 
-              ?>
-            </div>
-        </div>
-    </div> <!-- Conatiner end -->
-</section>  <!-- Section End -->
-
-<!-- End -->
-<div class="clearfix"></div>
-
-<?php require_once VIEWS.'shared/footer.php';

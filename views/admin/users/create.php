@@ -3,12 +3,12 @@ require_once VIEWS.'shared/admin/header.php';
 ?>
 <div class="page-content">
    <div class="row">
-        <div class="col-md-2">
+        <div class="col-md-3">
         <?php
           require_once VIEWS.'shared/admin/_aside.php';
         ?>
         </div>
-      <div class="col-md-10">
+      <div class="col-md-9">
         <div class="content-box-large">
           <div class="panel-heading">
                 <div class="panel-title"><?= $title;?></div>
@@ -45,12 +45,17 @@ require_once VIEWS.'shared/admin/header.php';
                         <label class="col-sm-2 control-label" for="role">User Role</label>
                         <div class="col-sm-10">
                             <select name="role" class="form-control" id="role">
-                                <option value="0">Select ...</option>
-                                <option value="1">Admin</option>
-                                <option value="2">Customer</option>
+                            <?php if (is_array($roles)) : ?>
+                                <?php foreach ($roles as $role): ?>
+                                    <option value="<?php echo $role['id']; ?>">
+                                        <?php echo $role['name']; ?>
+                                    </option>
+                                <?php endforeach; ?>
+                            <?php endif; ?>
                             </select>
                         </div>
                 </div>
+
                 <hr>
                 
             </div>

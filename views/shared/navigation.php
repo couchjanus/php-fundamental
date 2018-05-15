@@ -1,38 +1,27 @@
-<div class="masthead">
-<h3 class="text-muted">Project name</h3>
-
-<nav class="navbar navbar-light bg-faded rounded mb-3">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-toggleable-md" id="navbarCollapse">
-    <ul class="nav navbar-nav text-md-center justify-content-md-between">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/blog">Blog</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Services</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Downloads</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-        <div class="dropdown-menu" aria-labelledby="dropdown01">
-          <a class="dropdown-item" href="/user/signup">SignUp</a>
-          <a class="dropdown-item" href="/user/login">LogIn</a>
-          <a class="dropdown-item" href="/user/logout">LogOut</a></a>
-
-        </div>
-      </li>
-    </ul>
-  </div>
+<nav class="navbar">
+      <nav class="wrapper">
+        <div class="logo"><img src="/images/logo.png"></div><!-- Logo -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="label-toggle"></label>
+        <ul class="flexmenu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about" id="catalog">About</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/guest">Guest Book</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li><a href="#" id="cart-trigger"><i class="fas fa-shopping-cart shopping-cart shoppingcart"></i>&nbsp;Cart</a></li>
+          <li><a href="#"><label for="toggle-user" class="animate"><i class="fas fa-user"></i></label></a></li>
+        </ul>
+      </nav>
 </nav>
-</div>
-
+<dropdown>
+  <input id="toggle-user" type="checkbox">
+  <ul class="animate">
+    <?php if (User::isGuest()) :?>
+      <li class="animate"><a href="/register">SignUp<i class="fa fa-user-plus float-right"></i></a></li>
+      <li class="animate"><a href="/login">LogIn<i class="fa fa-sign-in float-right"></i></a></li>
+    <?php else :?>
+      <li class="animate"><a href="/logout">LogOut<i class="fa fa-sign-out float-right"></i></a></li>
+    <?php endif;?>
+  </ul>
+</dropdown>
